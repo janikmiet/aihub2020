@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Neurocenter Finland Presentation Ninja</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jani Miettinen" />
+    <meta name="date" content="2020-12-07" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="neurostyle.css" type="text/css" />
+    <link rel="stylesheet" href="footer-header.css" type="text/css" />
+    <link rel="stylesheet" href="images.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+&lt;!-- background-image: url(img/shutterstock_536377753-1536x954.jpg) --&gt;
+&lt;!-- background-position: 50% 50% --&gt;
+&lt;!-- background-size: cover --&gt;
+class: center, middle, inverse
+
+
+
+
+
+# **Potilasdatan visualisointi Shiny applikaatiolla**
+
+## *AiHub Webinaari 10.12.2020*
+
+
+&lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
+
+---
+&lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
+
+### Miksi avointa lähdekoodia?
+
+- **Vapaasti käytettävissä** - voit käyttää ohjelmaa kuten tahdot (lisenssin ehdoilla)
+- **Uudelleen toteutettavissa** - edistää avointa tiedettä ja tieteen läpinäkyvyyttä
+- **Jatkuvuus** - avoin lähdekoodi jää elämään vaikka sitä ei enää aktiivisesti kehittettäisi 
+- **Yhteisöllisyys** - uudet menetelmät ja kirjastot
+- **Saatavuus** - kaikki voivat käyttää työvälineitä eikä vaadi kaupallisia ohjelmistolisenssejä
+
+
+Lisää aiheesta esim. *JJ Allaire keynote in RStudio Conf 2020*
+&lt;https://rstudio.com/resources/rstudioconf-2020/open-source-software-for-data-science/&gt;
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&amp;copy; Kansallinen neurokeskus 2020 &lt;/span&gt;&lt;/div&gt;
+
+---
+background-image: url(https://cran.r-project.org/Rlogo.svg)
+background-size: 100px
+background-position: 90% 8%
+
+&lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
+
+
+### Miksi R?
+
+- [R](https://cran.r-project.org/) on perinteisesti erikoistunut tilastomatematiikkaan eli menetelmäpuoleen
+- Nykyisen R on verrattavissa yleisohjelmointikieleen eli sillä voidaan tehdä mm. koneoppimista, syväoppimista, isojen aineistojen käsittelyä, tietokantojen käsittelyä, rajapintoja, verkkosivuja sekä raportteja
+- R-kielen käyttäjien ympärille on kehittynyt eri tieteenaloilta laaja yhteisö, joka on avoin ja aktiivinen
+
+Seuraa yhteisöä esimerkiksi:
+
+- Twitterissä [#rstat](https://twitter.com/search?q=%23rstat&amp;src=typed_query) ja [#tidytuesday](https://twitter.com/search?q=%23TidyTuesday&amp;src=typeahead_click)
+- [community.rstudio.com](community.rstudio.com) sekä [stackoverflow.com](stackoverflow.com)
+
+
+Lisäksi tarjolla ilmaisia oppikirjoja, esim.
+
+- &lt;https://r4ds.had.co.nz/&gt;
+- &lt;https://rstudio-education.github.io/hopr/&gt;
+- &lt;https://ggplot2-book.org/&gt;
+- &lt;https://bookdown.org/yihui/rmarkdown/&gt;
+- &lt;https://bookdown.org/yihui/bookdown/&gt;
+
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&amp;copy; Kansallinen neurokeskus 2020 &lt;/span&gt;&lt;/div&gt;
+
+---
+background-image: url(img/shiny.png)
+background-size: 100px
+background-position: 90% 8%
+
+&lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
+
+### Miksi Shiny-sovellus?
+
+- [Shiny](https://rstudio.com/products/shiny/) on R-ohjelmistolle kehitetty paketti, jolla voidaan tehdä interaktiivisia sovelluksia
+- Helppo kehittää sovellus, jolla voidaan pilotoida sekä koestaa uusia toiminnallisuuksia
+- Kehitys ei vaadi suurta henkilöresurssimäärää, kuten erikseen tilattavat tiedon hyödyntämisratkaisut
+- Alkuun pääseminen on helppoa ja esimerkkisovelluksia (=*lähdekoodia*) on paljon saatavilla
+
+&lt;img src="img/shinygallery.png" class="centerimage" height = 300&gt;
+
+&lt;https://shiny.rstudio.com/gallery/&gt;
+
+---
+
+#### Esimerkki Shiny-applikaatiosta kliinisessä työssä
+
+*Esimerkkinä tapaus kliinisessä työssä, jossa käytettiin Shiny-sovellusta. Haluttiin selvittää voidaanko leikkaushaavojen infektioiden määrää vähentää niin että potilas lähettää kuvan matkapuhelimella ja lääkäri pystyi antamaan palautetta potilaan haavan parantumisesta. Koko toiminnallisuus toteutettiin Shiny-sovelluksen avulla.*
+
+&lt;img src="img/McLeanetAL2019.png" class="centerimage" height = 300&gt;
+
+
+&lt;https://pubmed.ncbi.nlm.nih.gov/31585971/&gt;
+
+&lt;div class="my-footer"&gt;&lt;span&gt;&amp;copy; Kansallinen neurokeskus 2020 &lt;/span&gt;&lt;/div&gt;
+
+
+
+---
+&lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
+
+## Potilasdatan visualisointi KYS-tietoallasympäristössä
+
+&lt;img src="img/alzapp.png" class="centerimage" height = 300 width = 500&gt;
+
+#### Sovellus*: &lt;https://bioinformatics.uef.fi/alzdemo&gt;
+
+#### Lähdekoodi: &lt;https://github.com/pohjois-savon-tietoallas/demo-alzheimer-shiny&gt;
+
+*Sovellus toimii parhaiten 1920x1080 resoluutiolla
+
+---
+&lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
+
+## Lähtökohdat ja tavoitteet
+
+- Sovellusta kehitettiin KYS-tietoallas ympäristössä yhteistyössä KYS:n, Rochen ja Kansallisen Neurokeskuksen asiantuntijoiden kanssa
+- Aineistona käytettiin syntetisoitua Alzheimer-potilaita koskevaa aineistoa
+- Aineistossa oli tietoa Alzheimer-potilaista vuosilta xxxx- xxxx eli he olivat saanet erityiskorvausoikeuden xxxxx lääkkeeseen
+
+
+#### Tavoitteet 
+
+- Koestaa tietoallasympäristöä datan analysoinnin ja sovelluskehittämisen kannalta
+- Selventää mitä edelsi ennen kuin Alzheimer-potilaat saivat erityiskorvausoikeuden eli diagnoosin
+- Rakentaa sovellus tutkijoiden ja lääkäreiden avuksi
+- Jakaa applikaatio ja lähdekoodi avoimena eteenpäin
+- Tarkastella potilaiden aikasempien diagnoosien kertymiä, sairaalapäiviä sekä lääkekäyttöä
+
+
+---
+&lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
+
+## Haasteet
+
+- Sovelluksen vasteaika: sovelluksen toiminta on osittain hidas johtuen siitä, että taustalla tapahtuu aineiston pilkkomista ja laskentaa. Tämä johtuu siitä, että käyttäjällä on mahdollisuus tarkastella *pientä osajoukkoa* koko aineistosta.
+- Aineiston muokkaus: haluttiin laskea jokainen potilas samalle aikajana-asteikolle, niin että diagnoosin 0-kohta oli verrattivissa potilaiden kesken 
+
+---
+&lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
+
+## Mitä tämä opetti?
+
+- Saatiin tehtyä hyvä esimerkkisovellus, jota voidaan käyttää jatkossa referenssinä uusiin ideoihin
+- Aineisto oli syntetisoitu, joten sovellus voitiin avata julkiseksi kaikkien saataville. Tämä helpottaa jatkoideoiden työstöä
+- Jatkossa on hyvä rajata näkökulma mitä halutaan tarkastella potilaista, eikä tarkastella kaikkea mahdollista tietoa
+
+---
+&lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
+
+## Mitä seuraavaksi?
+
+- Tämä myötä lähdin rakentamaan applikaatiota toiseen tutkimusaiheeseen. Tällä kertaa tavoitteena rakentaa sovellus niin, että se voidaan helposti ottaa käyttöön samantapaisten aineistojen kanssa.
+- Käyttäjä määrittelee aineistonsa ja keskeiset muuttujat. Sovellus tällöin muuntaa aineiston automaattisesti sovelluksessa käytettävään muotoon
+
+---
+class: center, middle
+
+&lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
+
+# Kiitos!
+
+Jani Miettinen &lt;/br&gt;
+Datatieteilijä &lt;/br&gt;
+jani.miettinen@uef.fi &lt;/br&gt;
+
+
+www.neurocenterfinland.fi
+
+www.janimiettinen.fi
+
+
+
+&lt;!-- &lt;img src="img/codedtoconnect.jpg" width = 350&gt; --&gt;
+&lt;img src="img/logo_fi.png" height = 50&gt;
+&lt;img src="img/image002.png" height = 50&gt;
+&lt;img src="img/image003.png" height = 50&gt;
+&lt;img src="img/image004.png" height = 50&gt;
+
+---
+class: center, middle
+
+## About
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) with **Neurocenter Finland** theme.
+
+Good vibes comes with [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr) and [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

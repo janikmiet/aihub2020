@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:medium);
+
+div.my-header {
+    background-color: #F77A00;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#96F58A), color-stop(20%,#88EA9C), color-stop(40%,#7CD9B3), color-stop(60%,#74CEDA), color-stop(80%,#70C1F9), color-stop(100%,#70C1F9));
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    text-align: left;
+}
+
+div.my-footer {
+    background-color: #FFF;
+    color: #351d6b;
+    font-family: 'Dosis';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+}
+div.my-footer span {
+    font-size: 10pt;
+    font-family: 'Dosis';
+    color: #351d6b;
+    position: absolute;
+    left: 15px;
+    bottom: 2px;
+}

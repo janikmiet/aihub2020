@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:medium);
+/*@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans');
+*/
+
+body {
+  font-family: 'Dosis', 'Calibri', 'Helvetica', 'Arial', "sans-serif";
+  background-color:#222;
+}
+
+/* Default background colour, and font size */
+.remark-slide-content{
+  background-color:#FFF;
+  font-family: "Calibri", "Helvetica", "Arial", "sans-serif";
+  color: #351d6b;
+  /*font-size: 220%;     Regular text */
+}
+
+h1, h2, h3 {
+  font-family: "Dosis";
+  font-weight: bold;
+  color: #29015f;
+}
+
+a, a > code {
+  color: #4942E5;
+}
+
+.remark-code-line-highlighted {
+  background-color: #70fe6d;
+}
+
+.inverse {
+  background-color: #4942E5 ;
+}
+
+.inverse, .inverse h1, .inverse h2, .inverse h3, .inverse a, inverse a > code {
+  font-family: 'Calibri';
+  color: #fff;
+}
+
