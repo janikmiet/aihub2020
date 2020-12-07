@@ -27,6 +27,7 @@ class: center, middle, inverse
 
 ## *AiHub Webinaari 10.12.2020*
 
+#### Kalvot saatavilla: &lt;https://research.janimiettinen.fi/material/aihub2020/&gt;
 
 &lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
 
@@ -35,17 +36,30 @@ class: center, middle, inverse
 
 ### Miksi avointa lähdekoodia?
 
+--
+
 - **Vapaasti käytettävissä** - voit käyttää ohjelmaa kuten tahdot (lisenssin ehdoilla)
+
+--
+
 - **Uudelleen toteutettavissa** - edistää avointa tiedettä ja tieteen läpinäkyvyyttä
+
+--
+
 - **Jatkuvuus** - avoin lähdekoodi jää elämään vaikka sitä ei enää aktiivisesti kehittettäisi 
+
+--
+
 - **Yhteisöllisyys** - uudet menetelmät ja kirjastot
+
+--
+
 - **Saatavuus** - kaikki voivat käyttää työvälineitä eikä vaadi kaupallisia ohjelmistolisenssejä
 
+--
 
 Lisää aiheesta esim. *JJ Allaire keynote in RStudio Conf 2020*
 &lt;https://rstudio.com/resources/rstudioconf-2020/open-source-software-for-data-science/&gt;
-
-&lt;div class="my-footer"&gt;&lt;span&gt;&amp;copy; Kansallinen neurokeskus 2020 &lt;/span&gt;&lt;/div&gt;
 
 ---
 background-image: url(https://cran.r-project.org/Rlogo.svg)
@@ -57,17 +71,19 @@ background-position: 90% 8%
 
 ### Miksi R?
 
-- [R](https://cran.r-project.org/) on perinteisesti erikoistunut tilastomatematiikkaan eli menetelmäpuoleen
-- Nykyisen R on verrattavissa yleisohjelmointikieleen eli sillä voidaan tehdä mm. koneoppimista, syväoppimista, isojen aineistojen käsittelyä, tietokantojen käsittelyä, rajapintoja, verkkosivuja sekä raportteja
-- R-kielen käyttäjien ympärille on kehittynyt eri tieteenaloilta laaja yhteisö, joka on avoin ja aktiivinen
+[R](https://cran.r-project.org/)-ohjelmisto on perinteisesti erikoistunut **tilastollisiin menetelmiin** eli mistä nykyiset koneoppimismallit ovat lähtöisin. Nykyisin R on verrattavissa **yleisohjelmointikieleen** eli sillä voidaan tehdä mm. *koneoppimista, syväoppimista, isojen aineistojen käsittelyä, tietokantojen käsittelyä, rajapintoja, visualisointeja, verkkosivuja, raportteja, automaatiota ....*
 
-Seuraa yhteisöä esimerkiksi:
+--
+
+**Yhteisö.** R-kielen käyttäjien ympärille on kehittynyt eri tieteenaloilta *laaja ja aktiivinen yhteisö*. Seuraa yhteisöä esimerkiksi:
 
 - Twitterissä [#rstat](https://twitter.com/search?q=%23rstat&amp;src=typed_query) ja [#tidytuesday](https://twitter.com/search?q=%23TidyTuesday&amp;src=typeahead_click)
 - [community.rstudio.com](community.rstudio.com) sekä [stackoverflow.com](stackoverflow.com)
 
 
-Lisäksi tarjolla ilmaisia oppikirjoja, esim.
+--
+
+**Materiaali.** Lisäksi tarjolla laajasti ilmaisia oppikirjoja, esim.
 
 - &lt;https://r4ds.had.co.nz/&gt;
 - &lt;https://rstudio-education.github.io/hopr/&gt;
@@ -75,8 +91,6 @@ Lisäksi tarjolla ilmaisia oppikirjoja, esim.
 - &lt;https://bookdown.org/yihui/rmarkdown/&gt;
 - &lt;https://bookdown.org/yihui/bookdown/&gt;
 
-
-&lt;div class="my-footer"&gt;&lt;span&gt;&amp;copy; Kansallinen neurokeskus 2020 &lt;/span&gt;&lt;/div&gt;
 
 ---
 background-image: url(img/shiny.png)
@@ -87,10 +101,21 @@ background-position: 90% 8%
 
 ### Miksi Shiny-sovellus?
 
-- [Shiny](https://rstudio.com/products/shiny/) on R-ohjelmistolle kehitetty paketti, jolla voidaan tehdä interaktiivisia sovelluksia
-- Helppo kehittää sovellus, jolla voidaan pilotoida sekä koestaa uusia toiminnallisuuksia
+[Shiny](https://rstudio.com/products/shiny/) on R-ohjelmistolle kehitetty paketti, jolla voidaan tehdä interaktiivisia sovelluksia
+
+--
+
+- Ideoiden ja toiminnallisuuksien koestus sekä pilotointi
+
+--
+
 - Kehitys ei vaadi suurta henkilöresurssimäärää, kuten erikseen tilattavat tiedon hyödyntämisratkaisut
+
+--
+
 - Alkuun pääseminen on helppoa ja esimerkkisovelluksia (=*lähdekoodia*) on paljon saatavilla
+
+--
 
 &lt;img src="img/shinygallery.png" class="centerimage" height = 300&gt;
 
@@ -100,21 +125,31 @@ background-position: 90% 8%
 
 #### Esimerkki Shiny-applikaatiosta kliinisessä työssä
 
-*Esimerkkinä tapaus kliinisessä työssä, jossa käytettiin Shiny-sovellusta. Haluttiin selvittää voidaanko leikkaushaavojen infektioiden määrää vähentää niin että potilas lähettää kuvan matkapuhelimella ja lääkäri pystyi antamaan palautetta potilaan haavan parantumisesta. Koko toiminnallisuus toteutettiin Shiny-sovelluksen avulla.*
-
 &lt;img src="img/McLeanetAL2019.png" class="centerimage" height = 300&gt;
 
 
-&lt;https://pubmed.ncbi.nlm.nih.gov/31585971/&gt;
+- Lähde: &lt;https://pubmed.ncbi.nlm.nih.gov/31585971/&gt;
 
-&lt;div class="my-footer"&gt;&lt;span&gt;&amp;copy; Kansallinen neurokeskus 2020 &lt;/span&gt;&lt;/div&gt;
+--
 
+Selvitettiin voidaanko leikkaushaavojen infektioiden määrää vähentää puuttumalla tapauksiin nopeammin
 
+--
+
+-&gt; Potilas lähettää kuvan haavasta matkapuhelimella
+
+--
+
+-&gt; Lääkäri antaa palautetta potilaan haavan parantumisesta Shiny-applikaation avulla
+
+--
+
+-&gt; Palaute päivitti samalla potilaantiedot lukuisiin muihin järjestelmiin
 
 ---
 &lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
 
-## Potilasdatan visualisointi KYS-tietoallasympäristössä
+## Potilasdatan visualisointi 
 
 &lt;img src="img/alzapp.png" class="centerimage" height = 300 width = 500&gt;
 
@@ -129,44 +164,43 @@ background-position: 90% 8%
 
 ## Lähtökohdat ja tavoitteet
 
-- Sovellusta kehitettiin KYS-tietoallas ympäristössä yhteistyössä KYS:n, Rochen ja Kansallisen Neurokeskuksen asiantuntijoiden kanssa
+- Sovellusta kehitettiin KYS-tietoallas ympäristössä yhteistyössä KYS:n, Roche Oy:n, Uef:n ja Kansallisen Neurokeskuksen asiantuntijoiden kanssa
+- Tavoitteena (i) koestaa KYS tietoallasympäristöä, (ii) tarkastella Alzheimer-potilaiden aikajanaa ennen ja jälkeen diagnoosin sekä (iii) jakaa applikaatio avoimena lähdekoodina 
 - Aineistona käytettiin syntetisoitua Alzheimer-potilaita koskevaa aineistoa
-- Aineistossa oli tietoa Alzheimer-potilaista vuosilta xxxx- xxxx eli he olivat saanet erityiskorvausoikeuden xxxxx lääkkeeseen
 
+#### Syntetisoitu aineisto
 
-#### Tavoitteet 
-
-- Koestaa tietoallasympäristöä datan analysoinnin ja sovelluskehittämisen kannalta
-- Selventää mitä edelsi ennen kuin Alzheimer-potilaat saivat erityiskorvausoikeuden eli diagnoosin
-- Rakentaa sovellus tutkijoiden ja lääkäreiden avuksi
-- Jakaa applikaatio ja lähdekoodi avoimena eteenpäin
-- Tarkastella potilaiden aikasempien diagnoosien kertymiä, sairaalapäiviä sekä lääkekäyttöä
-
+- Perustiedot henkilöistä (N = 13 431), jotka saaneet Alzheimer lääkkeiden erityiskorvausoikeuden 2002 - 2014 
+- Hilmo-tiedot vuosilta 1972 - 2012
+- Lääkeostotiedot L01, L02, L04, N02, N05 ja N06 lääkkeiden osalta (1994 - 2012)
 
 ---
 &lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
 
-## Haasteet
+## Haasteet 
 
-- Sovelluksen vasteaika: sovelluksen toiminta on osittain hidas johtuen siitä, että taustalla tapahtuu aineiston pilkkomista ja laskentaa. Tämä johtuu siitä, että käyttäjällä on mahdollisuus tarkastella *pientä osajoukkoa* koko aineistosta.
-- Aineiston muokkaus: haluttiin laskea jokainen potilas samalle aikajana-asteikolle, niin että diagnoosin 0-kohta oli verrattivissa potilaiden kesken 
+.pull-left[
+- **Sovelluksen vasteaika**: sovelluksen toiminta on osittain hidas johtuen siitä, että taustalla tapahtuu aineiston pilkkomista ja laskentaa. Tämä johtuu siitä, että käyttäjällä on mahdollisuus tarkastella *osajoukkoa* koko aineistosta.
+- **Aineiston muokkaus**: haluttiin laskea jokainen potilas samalle aikajana-asteikolle, niin että diagnoosin 0-kohta oli verrattivissa potilaiden kesken 
+]
+
+.pull-right[&lt;img src="img/bubble-gum-438404_640.jpg" height = 300&gt;
+]
+
 
 ---
+
 &lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
 
 ## Mitä tämä opetti?
 
-- Saatiin tehtyä hyvä esimerkkisovellus, jota voidaan käyttää jatkossa referenssinä uusiin ideoihin
-- Aineisto oli syntetisoitu, joten sovellus voitiin avata julkiseksi kaikkien saataville. Tämä helpottaa jatkoideoiden työstöä
-- Jatkossa on hyvä rajata näkökulma mitä halutaan tarkastella potilaista, eikä tarkastella kaikkea mahdollista tietoa
-
----
-&lt;div class="my-header"&gt;&lt;img src="img/logo_fi.png" style="height: 30px;"/&gt;&lt;/div&gt;
-
-## Mitä seuraavaksi?
-
-- Tämä myötä lähdin rakentamaan applikaatiota toiseen tutkimusaiheeseen. Tällä kertaa tavoitteena rakentaa sovellus niin, että se voidaan helposti ottaa käyttöön samantapaisten aineistojen kanssa.
-- Käyttäjä määrittelee aineistonsa ja keskeiset muuttujat. Sovellus tällöin muuntaa aineiston automaattisesti sovelluksessa käytettävään muotoon
+.pull-left[
+- **Avoin lähdekoodi**: Aineisto oli syntetisoitu, joten sovellus voitiin avata julkiseksi kaikkien saataville. Tämä helpottaa jatkoideoiden työstöä eli sovellusta voidaan jatkossa käyttää referenssinä uusiin ideoihin
+- **Aineisto**: useimmissa tutkimuksissa käytetään samankaltaisia aineistoja -&gt; universaalimpi applikaatio, joka on helpompi ottaa käyttöön myös eri tutkimusaiheissa
+- **Näkökulman** rajaaminen: Jatkossa on hyvä rajata mitä halutaan tarkastella potilaista, eikä tarkastella kaikkea mahdollista tietoa -&gt; vaikuttaa mm. nopeuteen
+]
+.pull-right[&lt;img src="img/brain-20424_640.jpg" height = 300&gt;
+]
 
 ---
 class: center, middle
@@ -180,9 +214,9 @@ Datatieteilijä &lt;/br&gt;
 jani.miettinen@uef.fi &lt;/br&gt;
 
 
-www.neurocenterfinland.fi
+&lt;www.neurocenterfinland.fi&gt;
 
-www.janimiettinen.fi
+Kalvot saatavilla: &lt;https://research.janimiettinen.fi/material/aihub2020/&gt;
 
 
 
@@ -197,7 +231,7 @@ class: center, middle
 
 ## About
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) with **Neurocenter Finland** theme.
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan) with [**Neurocenter Finland** theme](https://github.com/janikmiet/neurocenterslides).
 
 Good vibes comes with [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr) and [R Markdown](https://rmarkdown.rstudio.com).
     </textarea>
