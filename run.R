@@ -1,5 +1,4 @@
 # run.R
-
 ## Copy files to ./output/ and to kapsi.fi
 if(!dir.exists("./output/")) dir.create("./output/")
 if(TRUE){
